@@ -15,7 +15,7 @@ class SearchForm extends Component {
     }
     render() {
         return (
-            <form className="booksearch__form">
+            <form className="booksearch__form" onSubmit={e => this.props.handleSearch(e)}>
                 <div className="main_search">
                     <label htmlFor="search_bar" name="search_bar">Search:</label>
                     <input 
@@ -25,7 +25,9 @@ class SearchForm extends Component {
                         placeholder="example: henry" 
                         value={this.state.searchBar}
                         onChange={e => this.searchBarChanged(e.target.value)}/>
-                    <button type="submit">Search</button>
+                    <button type="submit">
+                        Search
+                    </button>
                 </div>
                 <div className="additional_search">
                     <label htmlFor="print_type" name="print_type">Print Type:</label>
