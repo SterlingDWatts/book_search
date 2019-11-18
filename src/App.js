@@ -16,7 +16,7 @@ class App extends Component {
         e.preventDefault();
         const searchResults = e.target.value;
         console.log(e.target)
-        const apiKey = '&key=AIzaSyC7ImzbfVcGrG-ytdiqEg9F2VEM1YsDiFo';
+        const apiKey = '&key=AIzaSyC7IzbfVcGrG-ytdiqEg9F2VEM1YsDiFo';
         const baseUrl = 'https://www.googleapis.com/books/v1/volumes?q=';
         const url = baseUrl + searchResults + apiKey;
         console.log(url);
