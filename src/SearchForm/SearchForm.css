@@ -1,0 +1,13 @@
+.main_search {
+    display: flex;
+    justify-content: center;
+    background-color: #ABABAB;
+    padding: 5px;
+}
+
+.additional_search {
+    background-color: #DEDEDE;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
